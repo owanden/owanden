@@ -21,7 +21,7 @@ TypeScript / React / Express. Student queue and TA management with authenticated
 - [Try the browser preview](https://owanden.github.io/demos/office-hours-queue/) with fixed synthetic data and simulated roles
 - [Run the full-stack local walkthrough](https://github.com/owanden/OH-Queue/blob/main/docs/demo.md) with fake notifications
 
-The preview makes no backend requests. The actual backend keeps one shared queue in memory; restarting discards it.
+The preview makes no backend requests. The actual backend keeps separate room queues in memory; restarting discards them. The configured administrator manages all rooms.
 
 ### [Incident Triage Agent](https://github.com/owanden/cf_ai_incident_triage_agent)
 
