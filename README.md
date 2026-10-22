@@ -27,6 +27,7 @@ The preview makes no backend requests. The actual backend keeps separate room qu
 
 TypeScript / Cloudflare Workers / Durable Objects. Structured incident summaries, hypotheses and next steps with transactional conversation updates.
 
+- [Try the browser preview](https://owanden.github.io/demos/incident-triage/) with fixed responses and sessions held only in the tab
 - [Run the provider-free fixture](https://github.com/owanden/cf_ai_incident_triage_agent#run-the-fixture-demo), including a reproducible failure case and keyboard controls
 - [Inspect concurrency checks](https://github.com/owanden/cf_ai_incident_triage_agent/blob/main/tests/api.test.cjs) for delayed and overlapping responses
 
