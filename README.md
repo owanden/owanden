@@ -1,0 +1,33 @@
+# Owen Anderson
+
+[Portfolio](https://owanden.github.io/) · [Try the queue preview](https://owanden.github.io/demos/office-hours-queue/)
+
+## Selected projects
+
+### [Dispatch](https://github.com/owanden/dispatch)
+
+Python / SQLite / HTTPS. Durable webhook delivery with idempotent enqueueing, bounded retries, signed requests and inspectable attempt history.
+
+- [Run the local HTTPS demo](https://github.com/owanden/dispatch#run-the-demo)
+- [Inspect actual worker-crash recovery](https://github.com/owanden/dispatch/blob/main/docs/crash-recovery.md), including duplicate acceptance and receiver deduplication
+- [Read repeated workload measurements](https://github.com/owanden/dispatch/blob/main/docs/benchmarks.md) and [isolated wheel installation](https://github.com/owanden/dispatch/blob/main/docs/installation.md)
+
+Delivery is at least once. Measurements use synthetic local workloads; public service deployment and production usage are not established.
+
+### [Office Hours Queue](https://github.com/owanden/OH-Queue)
+
+TypeScript / React / Express. Student queue and TA management with authenticated admin APIs and explicit public response fields.
+
+- [Try the browser preview](https://owanden.github.io/demos/office-hours-queue/) with fixed synthetic data and simulated roles
+- [Run the full-stack local walkthrough](https://github.com/owanden/OH-Queue/blob/main/docs/demo.md) with fake notifications
+
+The preview makes no backend requests. The actual backend keeps one shared queue in memory; restarting discards it.
+
+### [Incident Triage Agent](https://github.com/owanden/cf_ai_incident_triage_agent)
+
+TypeScript / Cloudflare Workers / Durable Objects. Structured incident summaries, hypotheses and next steps with transactional conversation updates.
+
+- [Run the provider-free fixture](https://github.com/owanden/cf_ai_incident_triage_agent#run-the-fixture-demo), including a reproducible failure case and keyboard controls
+- [Inspect concurrency checks](https://github.com/owanden/cf_ai_incident_triage_agent/blob/main/tests/api.test.cjs) for delayed and overlapping responses
+
+Fixture responses are predetermined, not a model-quality evaluation. The project has no authentication boundary; use synthetic incidents.
