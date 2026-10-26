@@ -4,6 +4,16 @@
 
 ## Selected projects
 
+### [CrawlIndex](https://github.com/owanden/crawlindex)
+
+Go / PostgreSQL / Docker. Crawl controlled HTML origins, retrieve extracted documents and search a PostgreSQL full-text index. Workers share durable job leases, URL deduplication and per-origin rate reservations.
+
+- [Run the two-worker local demo](https://github.com/owanden/crawlindex#run-locally) for submission, extraction and search
+- [Inspect verification](https://github.com/owanden/crawlindex/blob/main/docs/verification.md) covering killed-worker recovery, graceful shutdown and persistence across restart
+- [Read the architecture and boundaries](https://github.com/owanden/crawlindex/blob/main/docs/architecture.md)
+
+The demo uses controlled fixture pages. Kubernetes manifests render, but cluster operation and GCP deployment remain unverified.
+
 ### [Dispatch](https://github.com/owanden/dispatch)
 
 Python / SQLite / HTTPS. Durable webhook delivery with idempotent enqueueing, bounded retries, signed requests and inspectable attempt history.
